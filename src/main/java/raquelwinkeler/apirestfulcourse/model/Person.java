@@ -1,23 +1,29 @@
-package api.restful.raquelwinkeler.model;
+package raquelwinkeler.apirestfulcourse.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 import java.io.Serializable;
 
+@Entity
 @EqualsAndHashCode
 public class Person implements Serializable {
 
     @Serial
     private static final long serialVersionUID = -3921086335872315565L;
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String firstName;
     private String lastName;
     private String address;
     private String gender;
-
-    public Person() {}
 
     public Person(Long id, String firstName, String lastName, String address, String gender) {
         this.id = id;
@@ -26,6 +32,8 @@ public class Person implements Serializable {
         this.address = address;
         this.gender = gender;
     }
+
+    public Person() {}
 
     public String getLastName() {
         return lastName;
@@ -66,4 +74,5 @@ public class Person implements Serializable {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
 }
