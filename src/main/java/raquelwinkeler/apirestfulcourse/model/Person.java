@@ -1,23 +1,16 @@
 package raquelwinkeler.apirestfulcourse.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.EqualsAndHashCode;
 
 import java.io.Serial;
 import java.io.Serializable;
 
-@Entity
 @EqualsAndHashCode
 public class Person implements Serializable {
 
     @Serial
     private static final long serialVersionUID = -3921086335872315565L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String firstName;
