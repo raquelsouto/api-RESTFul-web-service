@@ -23,4 +23,9 @@ Upload e download de arquivos;
 * Dockerização da Aplicação  
 * Implantação na Amazon AWS  
 * Integração Contínua na Amazon AWS com o Github Actions  
-* Como consumir a API com React JS  
+* Como consumir a API com React JS    
+
+    Utilizaremos o padrão de projeto **Value Object - VO**
+    
+        Arquitetura seguida para o projeto: 
+    ![Modelo de arquitetura do projeto](img/arquitetura.png)
