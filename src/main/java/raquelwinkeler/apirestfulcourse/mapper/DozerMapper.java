@@ -15,7 +15,7 @@ public class DozerMapper {
 
     }
 
-    public static <O, D> List<D> parseLisrObjects(List<O> origin, Class<D> destination) {
+    public static <O, D> List<D> parseListObjects(List<O> origin, Class<D> destination) {
         List<D> destinationObjects = new ArrayList<D>();
 
         for (O o : origin) {
