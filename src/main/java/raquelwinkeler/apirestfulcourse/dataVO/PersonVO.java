@@ -1,5 +1,6 @@
 package raquelwinkeler.apirestfulcourse.dataVO;
 
+
 import java.io.Serial;
 import java.io.Serializable;
 
@@ -7,7 +8,6 @@ public class PersonVO implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 233502127114889961L;
-
     private Long id;
     private String firstName;
     private String lastName;
